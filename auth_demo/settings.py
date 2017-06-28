@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.flatpages',
     'hello',
     'accounts',
     'django_forms_bootstrap',
@@ -153,3 +154,5 @@ PAYPAL_RECEIVER_EMAIL = 'marinka87@gmail.com'
 ALLOWED_HOSTS = ['127.0.0.1', 'bf49ea06.ngrok.io', 'localhost']
 
 SITE_ID = 1
+
+
