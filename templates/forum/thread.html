@@ -3,7 +3,7 @@
 {% load thread_extras %}
 {% block content %}
 
-   <div class="row header"
+   <div class="row header">
        <div class="container">
            <h2>{{ thread.name }}</h2>
            <div class="col-md-12">
@@ -66,7 +66,7 @@
    </div>
    <div class="container">
        {% for post in thread.posts.all %}
-           {% include "post.html" %}
+           {% include "forum/post.html" %}
        {% endfor %}
    </div>
 {% endblock %}
