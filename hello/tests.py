@@ -5,6 +5,9 @@ from django.shortcuts import render_to_response
 
 
 class HomePageTest(TestCase):
+
+    fixtures = ['subjects', 'user']
+
     def test_home_page_resolves(self):
         home_page = resolve('/')
         self.assertEqual(home_page.func, get_index)
