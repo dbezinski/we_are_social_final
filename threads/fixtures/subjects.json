@@ -1,0 +1,60 @@
+[
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "General",
+        "description": "<p>Talk about everything</p>"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "name": "First Thread",
+        "user": 1,
+        "subject": 1,
+        "created_at": "2017-06-21T19:31:23Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 2,
+    "fields": {
+        "name": "New Thread poll",
+        "user": 2,
+        "subject": 1,
+        "created_at": "2017-06-28T10:10:39.054Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 1,
+    "fields": {
+        "thread": 1,
+        "comment": "<p>This is my first Post</p>",
+        "user": 2,
+        "created_at": "2017-06-27T14:37:33.619Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 2,
+    "fields": {
+        "thread": 2,
+        "comment": "",
+        "user": 2,
+        "created_at": "2017-06-28T10:10:39.054Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 3,
+    "fields": {
+        "thread": 2,
+        "comment": "",
+        "user": 2,
+        "created_at": "2017-06-28T13:12:36.718Z"
+    }
+}
+]
