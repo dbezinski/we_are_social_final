@@ -60,6 +60,3 @@ urlpatterns = [
         #thread_api_views.PostDeleteView.as_view(), name='delete-poll')
 ]
 
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns.append(url(r'^debug/', include(debug_toolbar.urls)))

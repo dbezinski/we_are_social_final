@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'disqus',
     'threads',
     'polls',
-    'debug_toolbar',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -53,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'auth_demo.urls'
