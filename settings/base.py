@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'disqus',
     'threads',
     'polls',
+    'debug_toolbar'
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
