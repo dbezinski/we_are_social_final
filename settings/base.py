@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'i227msqs#2ob7z83f2*^awx^j=+%6&^p4vc*y9@mn)67x=fvc1'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'bf49ea06.ngrok.io', 'localhost', 'we-are-social-.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'bf49ea06.ngrok.io', 'localhost', 'http://we-are-social-.herokuapp.com/']
 
 SITE_ID = 1
 
@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'disqus',
     'threads',
     'polls',
+    'debug_toolbar',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'auth_demo.urls'
